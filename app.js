@@ -162,8 +162,8 @@ function imprimirHtml() {
                     <i class='bx bx-dots-horizontal-rounded icono'></i>
                     <div class="nota__animacion">
                         <div class="nota__botones">
-                            <button class="nota__boton editar" data-id="${id}"><i class='bx bx-pencil'></i>Editar</button>
-                            <button class="nota__boton eliminar" data-id="${id}"><i class='bx bx-trash-alt'></i>Eliminar</button>
+                            <button class="nota__boton editar" data-id="${id}"><i class='bx bx-pencil i'></i>Editar</button>
+                            <button class="nota__boton eliminar" data-id="${id}"><i class='bx bx-trash-alt i'></i>Eliminar</button>
                         </div>
                     </div>
                 </div>

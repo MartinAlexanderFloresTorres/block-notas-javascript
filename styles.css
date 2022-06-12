@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 :root {
-    --primario: linear-gradient(blueviolet, rgb(131, 15, 241));
+    --primario:  linear-gradient(148.25deg,#A253D8 16.46%,#1545CB 89.85%);
     --secundario: blueviolet;
     --gray: #636363;
     --gray-all: #383838;
@@ -67,7 +67,7 @@ body {
     color: var(--secundario);
     text-transform: capitalize;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     pointer-events: none;
 }
 .nota {
@@ -162,6 +162,9 @@ body {
 .nota__boton:hover {
     background: var(--white-hover);
 }
+.nota__boton .i{
+    pointer-events: none;
+}
 /*=============== overlay ===============*/
 .overlay,
 .overlay-2 {
@@ -207,7 +210,7 @@ body {
 }
 .formulario,
 .overlay__item {
-    width: 300px;
+    width: 400px;
     height: auto;
     margin: auto;
     background: var(--white);
@@ -260,7 +263,7 @@ body {
 }
 .formulario__encabezado .i {
     cursor: pointer;
-    font-size: 25px;
+    font-size: 40px;
 }
 .formulario-form,
 .overlay__item {
@@ -316,6 +319,11 @@ body {
 .form__boton:hover{
     opacity: 0.9;
 }
+@media (max-width: 900px) {
+    .formulario {
+        width: 500px;
+    }
+}
 @media (max-width: 780px) {
     .lista {
         padding: 20px;
@@ -327,6 +335,9 @@ body {
         max-width: 100%;
         width: 100%;
     }
+    .formulario {
+       width: 400px;
+    }
 }
 @media (max-width: 400px) {
     .overlay__botones {
@@ -335,5 +346,9 @@ body {
     .overlay,
     .overlay-2 {
         padding: 20px;
+    }
+    .formulario,
+    .overlay__item {
+        width: 100%;
     }
 }
