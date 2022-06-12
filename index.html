@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block de Notas</title>
+    <!--=============== iconos ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--=============== css ===============-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="contenedor">
+        <section class="lista" id="lista">
+            <!--=============== new ===============-->
+            <div class="new" id="agregar">
+                <div class="new__plus">
+                    <i class='bx bx-plus i' ></i>
+                </div>
+                <p class="new__texto">Agregar nueva nota</p>
+            </div>
+            <!--=============== nota se rellena con js===============-->
+        </section>
+    </main>
+
+    <section class="overlay" id="overlay">
+        <div class="formulario">
+            <div class="formulario__encabezado">
+                <h2 class="formulario__titulo" id="form-title">Agregar nueva nota</h2>
+                <i class='bx bx-x i close' ></i>
+            </div>
+            <form class="formulario-form" id="formulario">
+                <div>
+                    <label class="form__label" for="titulo">Titulo</label>
+                    <input class="fomr__input" id="titulo" type="text">
+                </div>
+
+                <div>
+                    <label class="form__label" for="descripcion">Descripcion</label>
+                    <textarea class="fomr__textarea" id="descripcion" cols="20" rows="10" spellcheck="false"></textarea>
+                </div>
+                <button class="form__boton" id="btn_agregar" type="submit">Agregar Nota</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="overlay-2" id="overlay-2">
+        <div class="overlay__item">
+            <h2 class="overlay__texto">¿Desea eliminar?</h2>
+            <div class="overlay__botones">
+                <button class="overlay__cancelar">Cancelar</button>
+                <button class="overlay__eliminar">Eliminar</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
