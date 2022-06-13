@@ -111,12 +111,18 @@ function generarFecha(fecha) {
 // validar el formulario
 function validarFormulario(e) {
     e.preventDefault();
-    const titulo = document.querySelector("#titulo").value;
-    const descripcion = document.querySelector("#descripcion").value;
+    const titulo = document.querySelector("#titulo").value.trim();
+    const descripcion = document.querySelector("#descripcion").value.trim();
 
     //=============== validar el formulario ===============
     if ([titulo, descripcion].includes("")) {
         formulario.classList.add("error");
+        if (titulo === "") {
+            tituloInput.value = "";
+        }
+        if (descripcion === "") {
+            descripcionInput.value = "";
+        }
         setTimeout(() => {
             formulario.classList.remove("error");
         }, 2000);
